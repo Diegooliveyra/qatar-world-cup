@@ -18,6 +18,10 @@ const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
   }
 
+  html, body, #__next {
+    height: 100%;
+  }
+
   ${({ theme }) => css`
     html {
       font-size: 62.5%;
@@ -25,6 +29,23 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
+
+      color: ${theme.colors.secondary};
+      position: relative;
+      background-color: ${theme.colors.primary};
+      z-index: 0;
+    }
+
+    body::after {
+      background-image: url('/img/Al-Thumama-stadium.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      content: '';
+      opacity: 0.05;
+      position: absolute;
+      inset: 0;
+      z-index: -1;
     }
   `}
 `
