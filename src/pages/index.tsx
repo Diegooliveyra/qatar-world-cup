@@ -1,7 +1,12 @@
 export default function Home() {
   return (
-    <div>
-      <h1>World Cup</h1>
-    </div>
+    <div
+      style={{
+        margin: '0 auto',
+        width: '1500px',
+        padding: '200px',
+        display: 'flex'
+      }}
+    ></div>
   )
 }

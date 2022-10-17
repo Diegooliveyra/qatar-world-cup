@@ -30,9 +30,10 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
 
-      color: ${theme.colors.secondary};
-      position: relative;
       background-color: ${theme.colors.primary};
+      color: ${theme.colors.secondary};
+
+      position: relative;
       z-index: 0;
     }
 
@@ -41,11 +42,13 @@ const GlobalStyles = createGlobalStyle`
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
+
       content: '';
-      opacity: 0.05;
       position: absolute;
       inset: 0;
       z-index: -1;
+
+      opacity: 0.05;
     }
   `}
 `
