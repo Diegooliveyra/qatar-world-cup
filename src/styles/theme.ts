@@ -28,7 +28,8 @@ export default {
     red: '#4F081E',
     white: '#FAFAFA',
     black: '#030517',
-    lightGray: '#D9D9D9'
+    lightGray: '#D9D9D9',
+    green: '#008D52'
   },
   spacings: {
     xxsmall: '0.8rem',
