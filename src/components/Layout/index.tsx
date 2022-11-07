@@ -1,3 +1,5 @@
+import Header from 'components/Header'
+
 export type LayoutProps = {
   children: React.ReactNode
 }
@@ -5,8 +7,8 @@ export type LayoutProps = {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <>
-      <header>Header</header>
-      <main>{children} ola</main>
+      <Header />
+      <main style={{ height: '60vh' }}>{children}</main>
     </>
   )
 }
