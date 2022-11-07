@@ -34,6 +34,7 @@ export const TeamFlag = styled.div<TeamFlagProps>`
     border: 3px solid ${theme.colors.secondary};
 
     transition: ${theme.transition.default};
+    background-color: ${theme.colors.secondary};
   `}
 `
 
@@ -54,6 +55,7 @@ export type TeamNameProps = {
 export const TeamName = styled.p<TeamNameProps>`
   ${({ theme, color }) => css`
     font-size: ${theme.font.sizes.xlarge};
+    line-height: ${theme.font.sizes.xlarge};
 
     ${!!color && TeamNameModifier[color](theme)}
   `}
