@@ -5,10 +5,13 @@ import { ArrowBackIos as ArrowLeft } from '@styled-icons/material-outlined/Arrow
 import { ArrowForwardIos as ArrowRight } from '@styled-icons/material-outlined/ArrowForwardIos'
 
 import * as S from './styles'
+import { useRouter } from 'next/router'
 
 const HomepageTemplate = () => {
+  const router = useRouter()
   const groupData = {
     group: 'A',
+    id: 1,
     teams: [
       {
         name: 'Brazil',
@@ -72,7 +75,10 @@ const HomepageTemplate = () => {
     <S.Container>
       <Slider settings={settings}>
         <div>
-          <CardGroup groupData={groupData} />
+          <CardGroup
+            groupData={groupData}
+            onClick={() => router.push(`/group/${groupData?.id}`)}
+          />
         </div>
         <div>
           <CardGroup groupData={groupData} />

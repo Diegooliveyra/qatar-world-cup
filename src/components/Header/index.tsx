@@ -6,7 +6,7 @@ import * as S from './styles'
 const Header = () => {
   return (
     <S.Container>
-      <img src="img/logo.png" alt="Logo Qatar World Cup" />
+      <img src="/img/logo.png" alt="Logo Qatar World Cup" />
 
       <S.Nav>
         <ul>
@@ -19,12 +19,12 @@ const Header = () => {
       <S.Wrapper>
         <Link href="" passHref>
           <a>
-            <ReactSVG src="icons/logo-github.svg" />
+            <ReactSVG src="/icons/logo-github.svg" />
           </a>
         </Link>
         <Link href="" passHref>
           <a>
-            <ReactSVG src="icons/logo-linkedin.svg" />
+            <ReactSVG src="/icons/logo-linkedin.svg" />
           </a>
         </Link>
       </S.Wrapper>
