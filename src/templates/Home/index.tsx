@@ -4,7 +4,6 @@ import Slider from 'components/Slider'
 import { ArrowBackIos as ArrowLeft } from '@styled-icons/material-outlined/ArrowBackIos'
 import { ArrowForwardIos as ArrowRight } from '@styled-icons/material-outlined/ArrowForwardIos'
 
-import * as S from './styles'
 import { useRouter } from 'next/router'
 
 const HomepageTemplate = () => {
@@ -72,7 +71,7 @@ const HomepageTemplate = () => {
     ]
   }
   return (
-    <S.Container>
+    <>
       <Slider settings={settings}>
         <div>
           <CardGroup
@@ -102,7 +101,7 @@ const HomepageTemplate = () => {
           <CardGroup groupData={groupData} />
         </div>
       </Slider>
-    </S.Container>
+    </>
   )
 }
 
