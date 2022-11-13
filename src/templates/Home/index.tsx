@@ -5,6 +5,7 @@ import { ArrowBackIos as ArrowLeft } from '@styled-icons/material-outlined/Arrow
 import { ArrowForwardIos as ArrowRight } from '@styled-icons/material-outlined/ArrowForwardIos'
 
 import { useRouter } from 'next/router'
+import * as S from './styles'
 
 const HomepageTemplate = () => {
   const router = useRouter()
@@ -71,7 +72,7 @@ const HomepageTemplate = () => {
     ]
   }
   return (
-    <>
+    <S.Container>
       <Slider settings={settings}>
         <div>
           <CardGroup
@@ -101,7 +102,7 @@ const HomepageTemplate = () => {
           <CardGroup groupData={groupData} />
         </div>
       </Slider>
-    </>
+    </S.Container>
   )
 }
 

@@ -24,9 +24,19 @@ export const Nav = styled.nav`
 
       li {
         cursor: pointer;
+
+        a {
+          text-decoration: none;
+          display: block;
+          color: ${theme.colors.white};
+        }
       }
     }
   `}
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 export const Wrapper = styled.div`
   ${({ theme }) => css`

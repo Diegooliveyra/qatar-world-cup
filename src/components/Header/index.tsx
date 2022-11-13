@@ -10,9 +10,13 @@ const Header = () => {
 
       <S.Nav>
         <ul>
-          <li>Group stage</li>
+          <li>
+            <Link href={'/'}>
+              <a href="">Group stage</a>
+            </Link>
+          </li>
           <li>Knockout stage</li>
-          <li>Stadiuns</li>
+          {/* <li>Stadiuns</li> */}
         </ul>
       </S.Nav>
 

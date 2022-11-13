@@ -35,6 +35,8 @@ const GlobalStyles = createGlobalStyle`
 
       position: relative;
       z-index: 0;
+
+      overflow-x: hidden;
     }
 
     body::after {
